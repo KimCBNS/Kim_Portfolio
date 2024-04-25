@@ -1,3 +1,32 @@
+body {
+  
+  margin: 0;
+  padding: 0;
+  --first_color: rgb(97, 94, 239);
+}
+
+nav {
+
+}
+
+ul {
+  /* clears the bullets from the default list style */
+    list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+li {
+  display: inline;
+  float: left;
+  background-color: var(--first_color);
+  width: 90px;
+  height: 1%;
+  padding: 10px;
+  margin: 5px;
+}
+
 p {
   color: red;
   
