@@ -2,7 +2,10 @@ body {
   
   margin: 0;
   padding: 0;
-  --first_color: rgb(97, 94, 239);
+  --second_color: rgba(56, 56, 209, 0.567);
+  --first_color: rgba(93, 66, 192, 0.656);
+  background-image: url("waves.png");
+
 }
 
 nav {
@@ -12,22 +15,39 @@ nav {
 ul {
   /* clears the bullets from the default list style */
     list-style-type: none;
-    position: fixed;
-    top: 0;
-    width: 100%
+    background-color: var(--second_color);
+    height: 50px;
 }
 
 li {
   display: inline;
-  float: left;
+  float: right;
   background-color: var(--first_color);
   width: 90px;
-  height: 1%;
+  height: 15px;
   padding: 10px;
   margin: 5px;
+  text-align: right;
 }
 
 p {
-  color: red;
+  color: var(--second-color);
   
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  padding: 20px;
+  margin: 20px;
 }
