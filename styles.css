@@ -2,10 +2,14 @@ body {
   
   margin: 0;
   padding: 0;
-  --second_color: rgba(56, 56, 209, 0.567);
-  --first_color: rgba(93, 66, 192, 0.656);
+  --second_color: rgba(144, 197, 237, 0.739);
+  --first_color: rgba(18, 102, 150, 0.376);
+  --first_color_solid: rgb(18, 102, 150);
+  --font_color: rgb(29, 82, 110);
   background-image: url("waves.png");
 
+  color: var(--font_color);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 nav {
@@ -30,8 +34,21 @@ li {
   text-align: right;
 }
 
+/* not changing the colors at this point. not sure it is necessary */
+a {
+  color: var(--font_color);
+  text-decoration: none;
+}
+
+
 p {
-  color: var(--second-color);
+
+}
+
+.centerName {
+  text-align: left;
+  font-size: 40px;
+  margin: 20px;
   
 }
 
@@ -41,13 +58,33 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: orange;
+  width: 200px;
+  height: 200px;
+  background-color: var(--first_color);
   padding: 20px;
-  margin: 20px;
+  margin: 20px; 
+  align-content: center;
 }
+
+.box-1 {
+  align-items:normal;
+  padding: 20px;
+  width: 400px;
+  height:400px;
+  background-color: rgba(245, 245, 245, 0.16);
+}
+img {
+  width:75%;
+}
+
+
+footer {
+  width: 100%;
+  color: var(--first_color_solid);
+  background-color: var(--second_color);
+  font-size: 24px;
+  text-align: center;
+  
